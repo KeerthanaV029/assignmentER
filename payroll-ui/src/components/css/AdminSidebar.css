@@ -1,0 +1,51 @@
+/* AdminSidebar.css */
+.admin-sidebar {
+    width: 260px;
+    height: 100vh; /* Full viewport height */
+    background-color: #1e293b;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px 0;
+    position: fixed; /* THIS IS THE FIX: It locks it in place */
+    top: 0;
+    left: 0;
+    z-index: 1000; /* Stays on top of everything */
+    box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+}
+/* 1. Reduce font-size and adjust padding for links */
+.sidebar-links a {
+    text-decoration: none;
+    color: #94a3b8;
+    padding: 12px 16px; /* Reduced horizontal padding to save space */
+    font-size: 0.85rem; /* Smaller font helps long text fit on one line */
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Reduced gap between icon and text */
+    transition: all 0.2s ease;
+    border-left: 4px solid transparent;
+    white-space: nowrap; /* Prevents text from wrapping */
+}
+
+.logo {
+    font-size: 1.8rem;        /* Increased from 1.2rem */
+    font-weight: 800;         /* Made bolder */
+    text-align: left;
+    color: #38bdf8;
+    margin-bottom: 40px;      /* Added more space below to separate from links */
+    letter-spacing: -0.5px;   /* Makes it look cleaner/more modern */
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    padding: 0 10px;          /* Prevents text from hitting the edges */
+}
+
+/* 3. Ensure links don't stretch */
+.sidebar-links {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    width: 100%;
+}

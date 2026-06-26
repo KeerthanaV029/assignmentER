@@ -1,0 +1,92 @@
+/* Layout & Sidebar Integration */
+.container-fluid {
+    padding: 2rem !important;
+}
+
+/* Stats Cards Section */
+.row.mb-4 .col-md-6 {
+    display: flex;
+}
+
+.card {
+    border-radius: 12px !important;
+    border: none !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05) !important;
+    padding: 1.5rem !important;
+    width: 100%;
+    background: #ffffff;
+}
+
+.card small {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #64748b !important;
+}
+
+.card h3 {
+    margin-top: 0.5rem !important;
+    font-size: 2rem;
+}
+
+/* Table Container Styling */
+.table-container {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    padding: 1.5rem;
+    margin-top: 1rem;
+}
+
+.table thead th {
+    background-color: #f8fafc !important;
+    color: #475569 !important;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    padding: 1rem !important;
+    border-bottom: 2px solid #f1f5f9;
+}
+
+.table tbody td {
+    padding: 1rem !important;
+    vertical-align: middle;
+}
+
+/* Status Badges - Matching your UI */
+.badge {
+    padding: 0.4rem 0.8rem;
+    font-size: 0.75rem;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+/* Specific Badge Colors based on your screenshot */
+.bg-warning-subtle { background-color: #fffbeb; color: #d97706; }
+.bg-success-subtle { background-color: #f0fdf4; color: #16a34a; }
+.bg-danger-subtle { background-color: #fef2f2; color: #dc2626; }
+
+/* Action Buttons */
+.btn-sm {
+    padding: 0.35rem 0.75rem;
+    font-size: 0.8rem;
+    border-radius: 6px;
+}
+
+.btn-outline-primary {
+    border-color: #cbd5e1;
+    color: #475569;
+}
+
+.btn-outline-primary:hover {
+    background-color: #f1f5f9;
+    color: #1e293b;
+}
+
+/* Pagination Controls */
+.btn-secondary {
+    background-color: #334155;
+    border: none;
+}
+
+.btn-secondary:disabled {
+    background-color: #e2e8f0;
+}

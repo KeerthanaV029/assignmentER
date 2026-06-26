@@ -1,0 +1,155 @@
+/* 1. Main Page Wrapper */
+.container-fluid {
+    background-color: #f8fafc; /* Professional light background */
+    min-height: 100vh;
+}
+
+/* 2. Professional Cards */
+.card {
+    border: none !important;
+    border-radius: 16px !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03) !important;
+    padding: 1.5rem !important;
+}
+
+/* 3. The "Run Batch Payroll" Primary Card */
+.bg-primary {
+    background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%) !important;
+}
+
+/* 4. Table Header & Formatting */
+.table thead {
+    background-color: #f1f5f9;
+}
+
+.table thead th {
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #64748b;
+    padding: 1.25rem 1rem !important;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.table thead th:hover { background-color: #e2e8f0; }
+
+.table tbody td {
+    padding: 1.25rem 1rem !important;
+    font-weight: 500;
+    color: #334155;
+}
+
+/* 5. Modern Pill Badges */
+.badge {
+    padding: 0.5rem 0.85rem !important;
+    border-radius: 9999px !important;
+    font-size: 0.75rem;
+}
+
+.bg-success { background-color: #dcfce7 !important; color: #15803d !important; }
+.bg-warning { background-color: #fef3c7 !important; color: #b45309 !important; }
+
+/* 6. Calendar Polish */
+.react-calendar {
+    width: 100% !important;
+    border: none !important;
+    border-radius: 12px !important;
+    padding: 5px;
+}
+
+.react-calendar__tile--now {
+    background: #dbeafe !important;
+    color: #2563eb !important;
+    border-radius: 8px;
+}
+
+/* 7. Modal Styling */
+.modal-content {
+    border-radius: 20px !important;
+    border: none !important;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25) !important;
+}
+
+.modal-header {
+    border-bottom: 1px solid #f1f5f9;
+    padding: 1.5rem !important;
+}
+/* Container for the calendar to prevent squishing */
+.calendar-wrapper {
+    width: 320px; /* Standardize width */
+    margin: 0 auto;
+}
+
+/* Force the React-Calendar to display properly */
+.react-calendar {
+    width: 100% !important;
+    border: none !important;
+    border-radius: 16px !important;
+    padding: 10px;
+    background: #ffffff !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Fix the day names (M, T, W, etc.) and dates */
+.react-calendar__month-view__weekdays {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.75rem;
+    color: #64748b;
+}
+
+.react-calendar__month-view__days__day {
+    padding: 10px 0 !important;
+    font-size: 0.9rem;
+}
+
+/* Fix the header navigation alignment */
+.react-calendar__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.react-calendar__navigation button {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+/* Container to shrink the footprint */
+.calendar-wrapper {
+    max-width: 250px; /* Reduced from 320px */
+    margin: 0 auto;
+}
+
+/* Compact Calendar Styles */
+.react-calendar {
+    width: 100% !important;
+    border: none !important;
+    font-size: 0.75rem !important; /* Smaller text */
+    padding: 5px !important;
+}
+
+/* Reduce cell sizes */
+.react-calendar__month-view__days__day {
+    padding: 5px 0 !important; /* Thinner rows */
+}
+
+/* Hide navigation labels if needed to save space */
+.react-calendar__navigation__label {
+    font-size: 0.8rem !important;
+    pointer-events: none;
+}
+
+/* Reduce header/nav height */
+.react-calendar__navigation {
+    height: 30px !important;
+    margin-bottom: 5px !important;
+}
+
+.react-calendar__navigation button {
+    min-width: 30px !important;
+}

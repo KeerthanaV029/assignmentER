@@ -1,0 +1,82 @@
+/* Add a subtle gradient to the page background for depth */
+.container {
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%) !important;
+}
+
+/* Increase font size and center text for all table cells */
+.table td, .table th {
+    font-size: 1.1rem;      /* Increased text size for better readability */
+    text-align: center;     /* Centers all content in table cells */
+    vertical-align: middle; /* Ensures content is perfectly centered vertically */
+    padding: 20px !important; /* Adds space for a less cramped look */
+}
+/* Table Header Styling */
+.table thead {
+    background-color: #f8fafc !important; /* A very light soft slate color */
+    border-bottom: 2px solid #e2e8f0;    /* Adds a clean separator line */
+}
+
+.table thead th {
+    font-size: 0.9rem !important;        /* Slightly smaller than body text for hierarchy */
+    font-weight: 700 !important;         /* Bold headers to make them stand out */
+    color: #475569 !important;           /* Slate grey for professional contrast */
+    text-transform: uppercase;           /* Uppercase for clean, enterprise-style scanning */
+    letter-spacing: 0.05em;              /* Adds readability */
+    text-align: center !important;       /* Forces centering to match your data alignment */
+    padding: 16px 20px !important;       /* Consistent spacing */
+}
+/* Ensure the header text is also centered and capitalized for professionalism */
+.table thead th {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Optional: Make the Department Name column stand out slightly */
+.table td:first-child {
+    font-weight: 600;
+    color: #1e293b;
+}
+/* Make the Department Card pop */
+.card {
+    border: none !important;
+    border-radius: 20px !important;
+    background: linear-gradient(135deg, #ffffff, #f9fafb);
+    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover { transform: translateY(-5px); }
+
+/* Make the table look like a modern UI component */
+.table-responsive {
+    background: white;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+}
+
+.table tbody tr {
+    transition: background 0.3s ease;
+}
+
+.table tbody tr:hover {
+    background-color: #f0f7ff;
+}
+
+/* Stylish Buttons with Icons */
+.btn-outline-primary {
+    background: #e0f2fe;
+    border: none;
+    color: #0369a1;
+    border-radius: 10px;
+    font-weight: 600;
+}
+
+.btn-outline-danger {
+    background: #fee2e2;
+    border: none;
+    color: #b91c1c;
+    border-radius: 10px;
+    font-weight: 600;
+}

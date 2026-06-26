@@ -1,0 +1,33 @@
+/* 1. Reset everything to ensure a clean slate */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. Main layout: Forces side-by-side positioning */
+.admin-layout {
+    display: flex !important; /* Forces the sidebar and content to sit next to each other */
+    min-height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+/* 3. Sidebar: Fixed width, no 'absolute' or 'fixed' positioning */
+.employee-sidebar {
+    width: 260px;
+    flex-shrink: 0; /* Ensures the sidebar doesn't get squished */
+    background-color: #1e293b;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    /* REMOVE position: fixed or absolute if you see it here! */
+}
+
+/* 4. Content Area: Takes up remaining space */
+.admin-content {
+    flex: 1; /* This is the key: forces content to occupy ALL remaining width */
+    padding: 40px;
+    background-color: #f8fafc;
+    overflow-y: auto;
+}

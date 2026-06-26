@@ -1,0 +1,47 @@
+/* Ensure the container is responsive */
+.manager-content {
+    width: 100%;
+    min-width: 0; /* Important: prevents table from breaking flex layout */
+    padding: 20px;
+}
+
+.manager-content h2 {
+    color: #1e293b;
+    margin-bottom: 20px;
+}
+
+/* Modern Table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.table th {
+    background-color: #f1f5f9;
+    padding: 12px 15px;
+    text-align: left;
+    color: #475569;
+    font-weight: 600;
+}
+
+.table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* Button spacing */
+.btn-sm {
+    padding: 4px 10px;
+    font-size: 0.85rem;
+}
+
+/* Pagination */
+.pagination-controls {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

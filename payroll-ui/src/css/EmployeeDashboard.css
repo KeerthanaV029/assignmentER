@@ -1,0 +1,87 @@
+/* CONTAINER LAYOUT */
+.employee-layout {
+    display: flex;
+    min-height: 100vh; /* Changed from height to min-height */
+    background: #f4f6f9;
+}
+
+/* SIDEBAR - Fixed positioning */
+.employee-sidebar {
+    width: 280px;
+    background: #1e293b;
+    color: white;
+    padding: 24px 0; /* Vertical padding */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed; /* Stays in place */
+    left: 0;
+    top: 0;
+    height: 100vh;
+    z-index: 1000;
+}
+
+.sidebar-logo {
+    margin-bottom: 40px;
+    font-size: 2rem; /* Scaled down for better readability */
+    font-weight: 800;
+    color: #38bdf8; /* Brand accent color */
+    padding: 0 20px;
+}
+
+.sidebar-links {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+}
+
+.sidebar-links a {
+    text-decoration: none;
+    color: #94a3b8;
+    padding: 14px 20px;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    border-left: 4px solid transparent;
+    display: block;
+}
+
+.sidebar-links a:hover, 
+.sidebar-links a.active {
+    color: #ffffff;
+    background: #334155;
+    border-left: 4px solid #38bdf8;
+}
+.logout-btn {
+    /* Increased margin (left/right) reduces the button width */
+    margin: 0 1px; 
+    
+    /* Slightly reduced padding makes the button compact */
+    padding: 10px 0.01px; 
+    border: none;
+    background: #ef4444;
+    color: white;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+    
+    /* Keeps content centered */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.logout-btn:hover {
+    background-color: #dc2626;
+}
+/*to the right of the sidebar */
+.employee-main {
+    flex: 1;
+    margin-left: 280px; /* IMPORTANT: Must match sidebar width */
+    padding: 30px 40px;
+    min-height: 100vh;
+}

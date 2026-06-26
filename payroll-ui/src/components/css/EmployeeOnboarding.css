@@ -1,0 +1,22 @@
+.enterprise-container { padding: 40px; background: #f8fafc; min-height: 100vh; }
+.page-header h2 { font-weight: 700; color: #1e293b; margin-bottom: 20px; }
+
+.card { border-radius: 12px; border: none; background: white; }
+
+.enterprise-table {
+    width: 100%;
+    background: white;
+    border-radius: 12px;
+    border-collapse: separate;
+    border-spacing: 0;
+    box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
+    overflow: hidden;
+}
+
+.enterprise-table thead { background: #334155; color: white; }
+.enterprise-table th { padding: 16px; font-size: 0.8rem; text-transform: uppercase; }
+.enterprise-table td { padding: 16px; border-bottom: 1px solid #f1f5f9; color: #475569; }
+
+.form-control { border: 1px solid #e2e8f0; border-radius: 8px; padding: 12px; }
+.btn-primary { background: #4f46e5; border: none; padding: 10px 25px; border-radius: 8px; }
+.btn-primary:hover { background: #4338ca; }

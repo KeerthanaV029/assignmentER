@@ -1,0 +1,11 @@
+/* Force the background on the root and body */
+#root, body, html {
+    background-color: #fafafa !important;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Ensure the layout wrapper itself is transparent so it shows the body background */
+.main-content-wrapper {
+    background-color: transparent !important;
+}
